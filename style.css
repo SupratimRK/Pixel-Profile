@@ -19,7 +19,7 @@ font-family: 'Roboto', sans-serif;
 
 .header {
     width: 100%;
-    min-height: 100vh;
+    max-height: 100vh;
     background-image: linear-gradient(45deg, #fde7ea, #ffd7a8);
     background-position: center;
     background-size: cover;
@@ -93,8 +93,6 @@ span.size-32 {
     font-family: 'Source Sans Pro', sans-serif;
     margin-top: 15vh;
     margin-left: 15vw;
-
-
 }
 
 .scetion1 h1 {
@@ -117,6 +115,13 @@ span.size-32 {
 .scetion1 span {
     color: #f44336;
     font-size: 7.5vh;
+    transition: 1s;
+}
+
+.scetion1 span:hover {
+    font-size: 7.75vh;
+    transition: 1s;
+    z-index: 100;
 }
 
 .cursor {
@@ -171,6 +176,7 @@ float: right;
 margin-top: 13vh;
 margin-right: 1.5vw;
 transition: 1s;
+z-index: -100;
 }
 
 .img:hover{
@@ -189,14 +195,16 @@ transition: 1s;
 .foot{
     padding-left: 12.5vw;
     padding-right: 12.5vw;
-    padding-top: 1.5vh;
-    margin-top: 19vh;
-    padding-bottom: 0px;
-    display: flex;    
-    justify-content: flex-start;
+    padding-top: 2vh;
+    margin-top: 15vh;
+    padding-bottom: 2vh;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.3);
+    
 }
+
 
 .foot ul li{
     list-style: none;
@@ -206,7 +214,8 @@ transition: 1s;
 .foot button{
     text-decoration: none;
     color: #000;
-    border: solid 4px #ff7961;
+    border: none;/*solid 4px #ff7961;*/
+    font-size: 3vh;
     border-radius: 50vh;
     padding: 7px 25px;
     background-color: transparent;
@@ -217,4 +226,5 @@ transition: 1s;
 
 .foot button:hover{
         background-color: #ff7961;
+        transition: 0.4s;
 }
