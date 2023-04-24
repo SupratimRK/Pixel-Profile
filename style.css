@@ -9,6 +9,9 @@ font-family: 'Roboto', sans-serif;
 400;500
 */
 
+/*
+var(--col1)
+*/
 * {
     margin: 0;
     padding: 0;
@@ -17,10 +20,25 @@ font-family: 'Roboto', sans-serif;
     cursor: none;
 }
 
+:root{
+    --col1: #fde7ea;
+    --col2: #ffd7a8;
+    --col3: #ff7961;
+    --col4: #f44336;
+    
+}
+
+.dark{
+    --col1: #f9e7fe;
+    --col2: #dafcfc;
+    --col3: #3e91ff;
+    --col4: #68b3ff;
+}
+
 .header {
     width: 100%;
     max-height: 100vh;
-    background-image: linear-gradient(45deg, #fde7ea, #ffd7a8);
+    background-image: linear-gradient(45deg, var(--col1), var(--col2));
     background-position: center;
     background-size: cover;
     overflow: hidden;
@@ -37,7 +55,7 @@ nav {
 }
 
 .circle {
-    border: solid 2vh #ff7961;
+    border: solid 2vh var(--col3);
     height: 5vh;
     border-radius: 50%;
     -moz-border-radius: 50%;
@@ -74,7 +92,7 @@ nav ul li {
 .btna {
     border: solid 0px;
     border-radius: 10vh;
-    background-color: #ff7961;
+    background-color: var(--col3);
 }
 
 span.size-32 {
@@ -85,7 +103,7 @@ span.size-32 {
 .btn1:hover {
     border: solid 0px;
     border-radius: 10vh;
-    background-color: #ff7961;
+    background-color: var(--col3);
     cursor: none;
 }
 
@@ -98,7 +116,7 @@ span.size-32 {
 .scetion1 h1 {
     font-size: 10vh;
     font-weight: 500;
-    color: #f44336;
+    color: var(--col4);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -113,7 +131,7 @@ span.size-32 {
 }
 
 .scetion1 span {
-    color: #f44336;
+    color: var(--col4);
     font-size: 7.5vh;
     transition: 1s;
 }
@@ -140,7 +158,7 @@ span.size-32 {
 nav:hover~.cursor {
     transform: scale(0.4);
     mix-blend-mode: normal;
-    background: #ff7961;
+    background: var(--col3);
 
 }
 
@@ -158,7 +176,7 @@ nav:hover~.cursor {
 .btn2 {
     text-decoration: none;
     color: #000;
-    border: solid 4px #ff7961;
+    border: solid 4px var(--col3);
     border-radius: 50vh;
     padding: 7px 25px;
     background-color: transparent;
@@ -168,7 +186,7 @@ nav:hover~.cursor {
 }
 
 .btn2:hover {
-    background-color: #ff7961;
+    background-color: var(--col3);
 }
 
 .img{
@@ -187,7 +205,7 @@ transition: 1s;
 }
 
 .scetion1 span{
-    color: #f44336;
+    color: var(--col4);
     font-size: 6vh;
     font-weight: 600;
 }
@@ -214,7 +232,7 @@ transition: 1s;
 .foot button{
     text-decoration: none;
     color: #000;
-    border: none;/*solid 4px #ff7961;*/
+    border: none;/*solid 4px var(--col3);*/
     font-size: 3vh;
     border-radius: 50vh;
     padding: 7px 25px;
@@ -225,6 +243,6 @@ transition: 1s;
 }
 
 .foot button:hover{
-        background-color: #ff7961;
+        background-color: var(--col3);
         transition: 0.4s;
 }
