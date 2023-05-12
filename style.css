@@ -21,18 +21,18 @@ var(--col1)
 }
 
 :root{
-    --col1: #fde7ea;
-    --col2: #ffd7a8;
-    --col3: #ff7961;
-    --col4: #f44336;
-    
-}
-
-.dark{
     --col1: #f9e7fe;
     --col2: #dafcfc;
     --col3: #3e91ff;
     --col4: #68b3ff;
+    
+}
+
+.dark{
+    --col1: #fde7ea;
+    --col2: #ffd7a8;
+    --col3: #ff7961;
+    --col4: #f44336;
 }
 
 .header {
@@ -191,7 +191,7 @@ nav:hover~.cursor {
 
 .img{
 float: right;
-margin-top: 13vh;
+margin-top: 3.5vh;
 margin-right: 1.5vw;
 transition: 1s;
 z-index: -100;
@@ -199,7 +199,7 @@ z-index: -100;
 
 .img:hover{
     float: right;
-margin-top: 17vh;
+margin-top: 5.5vh;
 margin-right: 3vw;
 transition: 1s;
 }
